@@ -1,1 +1,3 @@
 print("Hello Mister World")
+wait(5)
+print("Hello but 5 seconds later")
