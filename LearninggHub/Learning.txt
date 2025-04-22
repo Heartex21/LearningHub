@@ -1,3 +1,14 @@
-print("this is a new print message both to try ingame and try discord webhook.")
-wait(6)
-print("if this works that means i am succesfull but i still need to learn how to keep my code without switching lua files constantly.")
+import time
+import random
+
+# List of random messages
+messages = ["Hello, World!", "Learning Python is fun!", "Keep up the good work!", "Coding is awesome!", "Stay curious!"]
+
+# Print a random message
+print(random.choice(messages))
+
+# Wait for 5 seconds
+time.sleep(5)
+
+# Print the second message
+print("This is the second message after 5 seconds.")
