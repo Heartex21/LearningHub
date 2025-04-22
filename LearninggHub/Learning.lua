@@ -1,6 +1,6 @@
 -- Define the source and destination file paths
-local sourceFile = "Learning.lua"
-local destinationFile = "LearningHub4.lua"
+local sourceFile = "LearningHub4.lua"
+local destinationFile = "Learning.lua"
 
 -- Function to copy the contents of the source file to the destination file
 local function copyFile()
