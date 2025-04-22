@@ -1,1 +1,1 @@
-print("this is a learning message")
+print("this is a new print message both to try ingame and try discord webhook.")
