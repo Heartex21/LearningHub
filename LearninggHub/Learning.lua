@@ -1,14 +1,29 @@
-import time
-import random
+-- Define the source and destination file paths
+local sourceFile = "Learning.lua"
+local destinationFile = "LearningHub4.lua"
 
-# List of random messages
-messages = ["Hello, World!", "Learning Python is fun!", "Keep up the good work!", "Coding is awesome!", "Stay curious!"]
+-- Function to copy the contents of the source file to the destination file
+local function copyFile()
+    local inputFile = io.open(sourceFile, "r") -- Open the source file in read mode
+    if not inputFile then
+        print("Error: Could not open source file.")
+        return
+    end
 
-# Print a random message
-print(random.choice(messages))
+    local content = inputFile:read("*all") -- Read the entire content of the source file
+    inputFile:close()
 
-# Wait for 5 seconds
-time.sleep = (5)
+    local outputFile = io.open(destinationFile, "w") -- Open the destination file in write mode
+    if not outputFile then
+        print("Error: Could not open destination file.")
+        return
+    end
 
-# Print the second message
-print("This is the second message after 5 seconds.")
+    outputFile:write(content) -- Write the content to the destination file
+    outputFile:close()
+
+    print("File copied successfully!")
+end
+
+-- Call the function to copy the file
+copyFile()
