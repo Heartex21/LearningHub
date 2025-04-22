@@ -1,1 +1,3 @@
 print("this is a new print message both to try ingame and try discord webhook.")
+wait(6)
+print("if this works that means i am succesfull but i still need to learn how to keep my code without switching lua files constantly.")
