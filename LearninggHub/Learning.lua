@@ -1,5 +1,4 @@
 local ply = LocalPlayer()
 
-local isPlayerAlive = ply:Alive()
-
-print(isPlayerAlive)
+local kills = ply:frags()
+print(kills)
