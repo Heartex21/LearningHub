@@ -1,5 +1,9 @@
-local ply = LocalPlayer()
+local entities = ents.GetAll()
 
-local kills = ply:Deaths()
+for k ,v in pairs(entities) do
 
-print(kills)
+    local c = Color(255,0,0)
+
+ v:SetColor(c)
+ 
+end
