@@ -20,6 +20,6 @@ hook.Add("HUDPaint", "DrawmyChoice", function()
 
 local health = LocalPlayer():Health()
 
-draw.RoundedBox(0,10,10,300,30,Color(255,120,120))
+draw.RoundedBox(0,10,10,health,30,Color(255,120,120))
 
 end)
