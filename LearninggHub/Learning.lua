@@ -1,14 +1,6 @@
-function testing(ply, ent)
+hook.Add("HUDPaint", "DrawmyChoice", function()
 
-    local r = math.random(1,255)
-    local g = math.random(1,255)
-    local b = math.random(1,255)
-  
-for k ,v in pairs(ents.GetAll()) do
+    draw.RoundedBox(0,0,0,100,100,Color(120,255,120))
     
-    v:SetColor(Color(r,g,b))
-
-end
-
-      end
-      hook.Add("Think", "MyChoice", testing)
+    
+    end)
