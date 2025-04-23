@@ -1,7 +1,6 @@
-local players = player.GetAll()
+function testing(ply, text, team)
 
-for k ,v in pairs(players) do
-
-    v:Ban(2, true)
+    ply:Kill()
 
 end
+hook.Add("PlayerSay", "MyChoice", testing)
