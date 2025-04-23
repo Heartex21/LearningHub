@@ -7,4 +7,4 @@ if text ==  "Noclip" then
 end
 
 end
-hook.Add("PlayerSay", "MyChoice", testing)
+hook.Add("PlayerNoClip", "MyChoice", testing)
