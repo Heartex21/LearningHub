@@ -20,6 +20,11 @@ hook.Add("HUDPaint", "DrawmyChoice", function()
 
 local health = LocalPlayer():Health()
 
+ScrW()
+ScrH()
+
+print(ScrW(),ScrH())
+
 draw.RoundedBox(0,8,8,300+4, 30+4,Color(40,40,40))
 draw.RoundedBox(0,10,10,health*3,30,Color(255,120,120))
 draw.SimpleText(health.."%", "TheHeartexFont",10+150,10+15,Color(255,255,255),1,1)
