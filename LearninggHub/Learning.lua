@@ -1,8 +1,8 @@
 function testing(ply, text, team)
 
-if text ==  "!Noclip" then
+if text ==  "Noclip" then
 
-    ply:noclip(true)
+    ply:PlayerNoClip(true)
 
 end
 
