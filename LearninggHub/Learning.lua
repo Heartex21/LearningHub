@@ -23,4 +23,9 @@ surface.DrawRect(10,10,100,100)
 surface.SetDrawColor(120,255,120,255)
 surface.DrawRect(10,120,100,100)
 
+surface.SetTextPos(0,0)
+surface.SetFont("TheHeartexFont")
+surface.SetTextColor(Color(255,120,120))
+surface.DrawText("Hello World!")
+
 end)
