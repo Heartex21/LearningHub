@@ -1,10 +1,6 @@
-function testing(ply, text, team)
+function testing(ply, ent)
 
-if text ==  "Noclip" then
-
-    ply:PlayerNoClip(true)
-
-end
-
-end
-hook.Add("PlayerNoClip", "MyChoice", testing)
+    ent:SetColor(Color(0,255,0))
+  
+      end
+      hook.Add("PhysgunPickup", "MyChoice", testing)
