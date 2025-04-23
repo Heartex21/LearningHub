@@ -18,14 +18,8 @@ surface.CreateFont( "TheHeartexFont", {
 
 hook.Add("HUDPaint", "DrawmyChoice", function()
 
-    surface.SetDrawColor(120,120,255,255)
-surface.DrawRect(10,10,100,100)
-surface.SetDrawColor(120,255,120,255)
-surface.DrawRect(10,120,100,100)
+local health = LocalPlayer():Health()
 
-surface.SetTextPos(0,0)
-surface.SetFont("TheHeartexFont")
-surface.SetTextColor(Color(255,120,120))
-surface.DrawText("Hello World!")
+draw.RoundedBox(0,10,10,100,10,Color(255,120,120))
 
 end)
