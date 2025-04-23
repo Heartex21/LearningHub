@@ -18,8 +18,7 @@ surface.CreateFont( "TheHeartexFont", {
 
 hook.Add("HUDPaint", "DrawmyChoice", function()
 
-draw.RoundedBox(0,800,540,420,55,Color(0,0,0))
-
-draw.SimpleText( "Ethan is a black man", "TheHeartexFont",800,540,Color(255,255,255),0,0)
+    surface.SetDrawColor(120,120,255,255)
+surface.DrawRect(10,10,100,100)
 
 end)
