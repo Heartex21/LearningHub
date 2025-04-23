@@ -1,8 +1,8 @@
 function testing(ply, text, team)
 
-if text ==  "!kill" then
+if text ==  "!Noclip" then
 
-    ply:Kill()
+    ply:noclip(true)
 
 end
 
