@@ -20,5 +20,7 @@ hook.Add("HUDPaint", "DrawmyChoice", function()
 
     surface.SetDrawColor(120,120,255,255)
 surface.DrawRect(10,10,100,100)
+surface.SetDrawColor(120,255,120,255)
+surface.DrawRect(10,120,100,100)
 
 end)
