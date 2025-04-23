@@ -1,5 +1,5 @@
 local ply = LocalPlayer()
 
-local kills = ply:Frags()
+local kills = ply:Deaths()
 
 print(kills)
