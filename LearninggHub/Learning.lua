@@ -1,9 +1,7 @@
-local entities = ents.GetAll()
+local players = player.GetAll()
 
-for k ,v in pairs(entities) do
+for k ,v in pairs(players) do
 
-    
+    v:Kill()
 
- v:Ignite(10,1)
- 
 end
