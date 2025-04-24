@@ -17,4 +17,5 @@ button:SetText("Click me to learn more!")
 button.DoClick = function()
 	button:SetText("You have clicked me!")
 	button:SizeToContents()
+	button:Center()
 end
