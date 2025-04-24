@@ -22,7 +22,6 @@ button.DoClick = buttonPressed
 local label = vgui.Create("DLabel", frame)
 label:SetPos(10,90)
 label:SetText("This is a label")
-
-function DLabel:DoClick()
+label:OnDepressed = function()
 	print("Label was clicked!")
 end
