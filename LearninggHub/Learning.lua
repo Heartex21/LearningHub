@@ -7,3 +7,8 @@ frame:MakePopup()
 local button = vgui.Create("DButton", frame)
 button:SetPos(10,40)
 button:SetSize(200,45)
+button:SetText("Hello World")
+
+local label = vgui.Create("DLabel", frame)
+label:SetPos(10,90)
+label:SetText("This is a label")
