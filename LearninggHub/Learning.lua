@@ -3,6 +3,11 @@ frame:SetSize(800, 600)
 frame:Center()
 frame:SetVisible(true)
 frame:MakePopup()
+frame.Paint = function(s , w , h)
+
+draw.RoundedBox(5,0,0,w,h,Color(255,120,120))
+
+end
 
 function buttonPressed()
 	print("Button was pressed!")
