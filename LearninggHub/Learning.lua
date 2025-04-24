@@ -17,6 +17,6 @@ DCombo:SetValue("Select an option")
 DCombo:AddChoice("I Like learning.")
 DCombo:AddChoice("I like seeing new things.")
 DCombo:AddChoice("Thats pretty much all today.")
-DCombo.OnSelect = function(panel, 1, Thats nice!)
+DCombo.OnSelect = function(panel, 1...2..3, thats nice!)
 	print("You selected: ".. choice")
 end
