@@ -16,7 +16,7 @@ button:Center()
 button:SetText("Click me to learn more!")
 button.DoClick = OnDepressed
 
-function OnDepressed()
-	button:SetText("You are clicking and holding me!")
-	button:SizeToContents()
+function OnDepressed(g)
+	g:SetText("You are clicking and holding me!")
+	g:SizeToContents()
 end
