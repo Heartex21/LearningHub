@@ -1,5 +1,5 @@
 local frame = vgui.Create("Frame")
 frame:SetSize(800, 600)
-frame:SetPos(12,12)
+frame:Center()
 frame:SetVisible(true)
 frame:MakePopup()
