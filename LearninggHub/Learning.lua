@@ -24,3 +24,4 @@ function OnReleased()
 	button:SetText("You have released me!")
 	button:SizeToContents()
 end
+end
