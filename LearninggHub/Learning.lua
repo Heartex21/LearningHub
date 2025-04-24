@@ -11,7 +11,7 @@ frame.Paint = function(s , w , h)
 end
 
 local DComboBox = vgui.Create("DComboBox", frame)
-DCombo:SetPos(50,50)
+DCombo:Center()
 DCombo:SetSize(200,50)
 DCombo:SetValue("Select an option")
 DCombo:AddChoice("I Like learning.")
