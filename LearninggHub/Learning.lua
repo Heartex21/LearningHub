@@ -5,4 +5,5 @@ frame:SetVisible(true)
 frame:MakePopup()
 
 local button = vgui.Create("DButton", frame)
-button:SetPos(10,10)
+button:SetPos(10,40)
+button:SetSize(200,45)
