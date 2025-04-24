@@ -10,12 +10,13 @@ frame.Paint = function(s , w , h)
 
 end
 
-local button = vgui.Create("DButton", frame)
-button:SetSize(200, 50)
-button:Center()
-button:SetText("Click me to learn more!")
-button.DoClick = function()
-	button:SetText("You have clicked me!")
-	button:SizeToContents()
-	button:Center()
+local DComboBox = vgui.Create("DComboBox", frame)
+DCombo:SetPos(50,50)
+DCombo:SetSize(200,50)
+DCombo:SetValue("Select an option")
+DCombo:AddChoice("I Like learning.")
+DCombo:AddChoice("I like seeing new things.")
+DCombo:AddChoice("Thats pretty much all today.")
+DCombo.OnSelect = function(panel, 1, Thats nice!)
+	print("You selected: ".. choice")
 end
