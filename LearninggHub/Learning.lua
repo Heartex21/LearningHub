@@ -5,6 +5,8 @@ frame:SetVisible(true)
 frame:MakePopup()
 frame.Paint = function(s , w , h)
 
+end
+
 draw.RoundedBox(5,0,0,w,h,Color(0,0,0))
 draw.RoundedBox(5,2,2,w-4,h-4,Color(50,50,50))
 
