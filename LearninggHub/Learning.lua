@@ -13,15 +13,8 @@ button:SetSize(200, 50)
 button:Center()
 button:SetText("Click me to learn more!")
 button.DoClick = OnDepressed
-button.OnReleased = OnReleased
 
 function OnDepressed()
 	button:SetText("You are clicking and holding me!")
 	button:SizeToContents()
-end
-
-function OnReleased()
-	button:SetText("You have released me!")
-	button:SizeToContents()
-end
 end
