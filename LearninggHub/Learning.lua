@@ -23,6 +23,11 @@ local label = vgui.Create("DLabel", frame)
 label:SetPos(10,90)
 label:SetText("This is a label")
 label:SetMouseInputEnabled(true)
-label.OnMousePressed = function(G)
+label.OnDepressed = function(G)
 	g:SetText("Label was clicked!")
+	label:SizeToContents()
+end
+label.OnReleased = function(G)
+	g:SetText("Label was released!")
+	label:SizeToContents()
 end
