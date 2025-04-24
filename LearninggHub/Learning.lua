@@ -14,9 +14,9 @@ local button = vgui.Create("DButton", frame)
 button:SetSize(200, 50)
 button:Center()
 button:SetText("Click me to learn more!")
-button.DoClick = OnDepressed
+button.DoClick = buttonPressed
 
-function OnDepressed(g)
-	g:SetText("You are clicking and holding me!")
-	g:SizeToContents()
+function buttonPressed()
+	button:SetText("You have clicked me!")
+	button:SizeToContents()
 end
