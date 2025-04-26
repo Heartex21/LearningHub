@@ -11,3 +11,10 @@ net.Start("LearningHub4")
 net.SendToServer()
 
 end
+
+net.Receive("ClientMessage", function(len)
+
+	print("I received the message from the server")
+
+end)
+
