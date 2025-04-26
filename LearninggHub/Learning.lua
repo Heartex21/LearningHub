@@ -8,6 +8,7 @@ local heat = vgui.Create("DButton", frame)
 heat.DoClick = function()
 
 net.Start("LearningHub4")
+net.WriteString("Hello World!")
 net.SendToServer()
 
 end
@@ -17,4 +18,3 @@ net.Receive("ClientMessage", function(len)
 	print("I received the message from the server")
 
 end)
-
