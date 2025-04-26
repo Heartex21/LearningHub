@@ -8,7 +8,7 @@ local heat = vgui.Create("DButton", frame)
 heat.DoClick = function()
 
 net.Start("LearningHub4")
-net.WriteInt(1337, 8)
+net.WriteInt(32, 16)
 net.SendToServer()
 
 end
