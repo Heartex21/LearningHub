@@ -1,2 +1,2 @@
-local test = Lerp(0.5, 0, 100)
+local test = Lerp(LocalPlayer():Health()/100, 0, 1000)
 print(test)
