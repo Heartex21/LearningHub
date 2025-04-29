@@ -1,6 +1,6 @@
-local test = Lerp(LocalPlayer():Health()/100, 0, 1000)
-print(test)
+local smoothHealth = 100
 
 hook.Add("HUDPaint", "heartex", function()
-	draw.RoundedBox(0,0,0,1000,100,Color(255,120,120,255))
+	smoothHealth = Lerp(10*FrameTime(), smoothHealth, LocalPlayer():Health())
+	draw.RoundedBox(0,0,0,smoothHealth*5,100,Color(255,120,120,255))
 end)
